@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html>
 <?php $this->load->view('admin/layout/head') ?>
 <body class="hold-transition skin-blue sidebar-mini">

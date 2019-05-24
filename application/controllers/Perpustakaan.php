@@ -17,7 +17,12 @@ class Perpustakaan extends CI_Controller {
 	}	
 	public function petugas()
 	{
-		$this->load->view('v_login');
+		//var_dump($this->session->userdata());
+		if($this->session->userdata('level')==='1'){
+			$this->load->view('admin/dashboard/index');
+		}else{
+			redirect(base_url('Login/index'));
+		}
 	}
 	public function anggota()
 	{
